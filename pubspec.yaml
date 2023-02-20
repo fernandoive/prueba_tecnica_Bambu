@@ -47,6 +47,7 @@ dependencies:
   url_launcher: ^6.1.9
   flutter_share: ^2.0.0
   sidebarx: ^0.14.0
+  app_popup_menu: ^1.0.0
 
 dev_dependencies:
   flutter_test:

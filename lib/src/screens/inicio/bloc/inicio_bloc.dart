@@ -4,6 +4,7 @@ import 'package:rxdart/rxdart.dart';
 class InicioBloc {
   final _mostrarCircularProgress = BehaviorSubject<bool>.seeded(false);
   final _usuarioModel = BehaviorSubject<UsuarioModel>();
+  final _pais = BehaviorSubject<String>.seeded('mx');
 
   //////////////////////////////////////////////////
   ///       mostrarCircularProgress
@@ -27,8 +28,20 @@ class InicioBloc {
     _usuarioModel.sink.add(usuarioModel);
   }
 
+  //////////////////////////////////////////////////
+  ///       pais
+  //////////////////////////////////////////////////
+  Stream<String> get pais => _pais.stream;
+
+  String? get paisValue => _pais.valueOrNull;
+
+  paisNext(String pais) {
+    _pais.sink.add(pais);
+  }
+
   dispose() {
     _mostrarCircularProgress.close();
     _usuarioModel.close();
+    _pais.close();
   }
 }

@@ -27,7 +27,9 @@ class NoticiasUtility {
     final RespuestaUtilityModel respuestaUtilityModel = RespuestaUtilityModel();
 
     try {
-      await NoticiasApi.instance.topHeadlines().then((http.Response response) {
+      await NoticiasApi.instance.topHeadlines(
+        pais: inicioBloc.paisValue!
+      ).then((http.Response response) {
 
         if(response.statusCode != 200) {
           throw 'Error';
@@ -74,7 +76,8 @@ class NoticiasUtility {
 
     try {
       await NoticiasApi.instance.categorys(
-        categoria: categoria 
+        categoria: categoria,
+        pais: inicioBloc.paisValue!
       ).then((http.Response response) {
 
         if(response.statusCode != 200) {
