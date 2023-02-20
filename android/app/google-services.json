@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "713519657150",
+    "project_id": "prueba-tecnica-bambu",
+    "storage_bucket": "prueba-tecnica-bambu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713519657150:android:20fc088fb8eef80e47aeef",
+        "android_client_info": {
+          "package_name": "com.example.prueba_tecnica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713519657150-vha2l4293tlbtbv0qnfq90qihdfugghg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm0x_rexq9deT3KGNtYrTr9RO-BpDGS7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713519657150-vha2l4293tlbtbv0qnfq90qihdfugghg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
